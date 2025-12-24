@@ -1,0 +1,17 @@
+# Security
+.env
+.streamlit/secrets.toml
+**/*.pem
+**/*.key
+
+# Python Bloat
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# OS Junk
+.DS_Store
+Thumbs.db

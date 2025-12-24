@@ -1,0 +1,174 @@
+/* =========================================
+   NEXUS AI // GLOBAL THEME v1.0
+   ========================================= */
+
+/* --- 0. THEME VARIABLES (The "Control Panel") --- */
+:root {
+    --primary-color: #00FF94;       /* Neon Green */
+    --primary-dim: rgba(0, 255, 148, 0.03);
+    --bg-color: #0E1117;           /* Deep Space Black */
+    --text-color: #b0b8c3;         /* Soft Grey */
+    --accent-color: #2d3748;       /* Borders */
+    --error-color: #ff0050;        /* Red */
+}
+
+/* --- 1. GLOBAL TYPOGRAPHY --- */
+/* Note: Ensure JetBrains Mono is loaded in main.py via st.markdown */
+html, body, .stApp, .stMarkdown, .stButton, .stTextInput, .stTextArea {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* --- 2. THE VOID (BACKGROUND) --- */
+.stApp {
+    background-color: var(--bg-color);
+    background-image:
+        linear-gradient(rgba(14, 17, 23, 0.96), rgba(14, 17, 23, 0.96)),
+        linear-gradient(90deg, var(--primary-dim) 1px, transparent 1px),
+        linear-gradient(var(--primary-dim) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* --- 3. SCROLLBARS (Cyberpunk Detail) --- */
+*::-webkit-scrollbar {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg-color) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color) !important;
+    border-radius: 6px !important;
+    border: 3px solid var(--bg-color) !important;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--bg-color) !important;
+    box-shadow: 0 0 15px var(--primary-color) !important;
+}
+
+/* --- 4. HEADERS --- */
+h1, h2, h3 {
+    color: var(--primary-color) !important;
+    font-weight: 800 !important;
+    text-shadow: 0 0 20px rgba(0, 255, 148, 0.6);
+}
+p, li, label, .stCaption {
+    color: var(--text-color) !important;
+}
+
+/* --- 5. INPUT FIELDS (Glow Effect) --- */
+.stTextInput > div > div,
+.stTextArea > div > div {
+    background-color: #161b26 !important;
+    border: 1px solid var(--accent-color) !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+}
+
+.stTextInput > div > div:focus-within,
+.stTextArea > div > div:focus-within {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 25px rgba(0, 255, 148, 0.5) !important;
+    transform: translateY(-2px);
+}
+
+input, textarea {
+    color: var(--primary-color) !important;
+    caret-color: var(--primary-color) !important;
+}
+
+/* --- 6. BUTTONS --- */
+div.stButton > button {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-weight: 700;
+}
+
+div.stButton > button:hover {
+    background: var(--primary-color) !important;
+    color: #000000 !important;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+div.stButton > button:hover p {
+    color: #000000 !important;
+}
+
+/* --- 7. CHAT BUBBLES --- */
+/* AI Assistant */
+[data-testid="stChatMessage"]:nth-child(even) {
+    background-color: #131d2b !important;
+    border-left: 5px solid var(--primary-color) !important;
+    border-radius: 4px 12px 12px 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+/* User */
+[data-testid="stChatMessage"]:nth-child(odd) {
+    background-color: #000000 !important;
+    border: 1px solid #333 !important;
+    border-radius: 12px 4px 4px 12px;
+    margin-bottom: 10px;
+}
+
+/* --- 8. STATUS WIDGET --- */
+[data-testid="stStatusWidget"] {
+    background-color: #0d1117;
+    border: 1px solid var(--accent-color);
+    border-left: 4px solid var(--primary-color);
+}
+[data-testid="stStatusWidget"] header {
+    color: var(--primary-color) !important;
+}
+
+/* --- 9. UTILITIES (Commented out for safety) --- */
+/* Uncomment these to hide Streamlit branding for final production */
+/*
+#MainMenu, footer, header {visibility: hidden;}
+*/
+
+/* --- 10. ANIMATIONS (Heartbeat) --- */
+@keyframes nexus-pulse {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(0, 255, 148, 0.4);
+    }
+    50% {
+        opacity: 0.3;
+        text-shadow: 0 0 0px rgba(0, 255, 148, 0);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(0, 255, 148, 0.4);
+    }
+}
+
+/* Target Status Widget Text */
+div[data-testid="stStatusWidget"] > div:first-child p {
+    animation: nexus-pulse 1.5s infinite ease-in-out !important;
+    color: var(--primary-color) !important;
+    font-weight: 800 !important;
+}
+
+/* Target Status Widget Icon */
+div[data-testid="stStatusWidget"] > div:first-child svg {
+    animation: nexus-pulse 1.5s infinite ease-in-out !important;
+    fill: var(--primary-color) !important;
+}
+
+/* --- 11. ERROR STATES --- */
+div[data-baseweb="notification"][class*="st-ae"] {
+    background-color: rgba(255, 0, 80, 0.1) !important;
+    border: 1px solid var(--error-color) !important;
+    color: var(--error-color) !important;
+}
+
+div[data-baseweb="notification"] svg {
+    fill: var(--error-color) !important;
+}
