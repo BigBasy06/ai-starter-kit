@@ -1,79 +1,92 @@
+
 # ⚡ Nexus AI // The Reasoning Engine Template
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io)
 [![OpenAI](https://img.shields.io/badge/Engine-GPT--4o-green.svg)](https://openai.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Deployment](https://img.shields.io/badge/Deployment-Ready-blue.svg)](https://share.streamlit.io)
 
-> **"I build and deploy your AI backend in 48 hours."**
-> This repository contains the **Nexus Template** — the core architecture used to build advanced reasoning engines like "Sigma AI" (shown below).
+> **"The University-Grade AI Wrapper."**
+> A production-ready architecture to deploy GPT-4o with Vision, Real-time Streaming, and LaTeX Rendering.
+> **Built for Hackathons & Final Year Projects.**
 
 ---
 
 ## 🎥 Capability Showcase
-*The video below demonstrates Sigma AI, a production-grade implementation built using this exact architecture.*
+*The video below demonstrates **Sigma AI**, a production-grade implementation built using this exact architecture.*
 
+<!-- PASTE YOUR GITHUB ISSUE VIDEO LINK OR YOUTUBE THUMBNAIL HERE -->
 [![Watch the Demo](assets/thumbnail.jpg)](https://youtu.be/_cbe6P1pMdE)
 
-> **Click the image above to watch the full 54s demo.**
+---
+
+## 🚀 What Is This?
+This repository is a **clean, unbranded** template of the engine shown above. It provides the "Skeleton" you need to build advanced AI apps without starting from scratch.
+
+### Core Features:
+*   **🧠 Multi-Modal Vision:** Drag & Drop images, handwriting, or PDFs. The AI analyzes them instantly.
+*   **⚡ Real-Time Streaming:** Text generates token-by-token (No "Loading..." spinners).
+*   **🎨 Cyber-Minimalist UI:** Pre-styled CSS that looks professional out of the box.
+*   **🧮 Academic Math Engine:** Automatically formats complex equations ($$ x = \frac{-b}{2a} $$) using LaTeX.
+*   **🛡️ Public-Safe Auth:** Users must enter their own API Key, making it safe to demo publicly.
 
 ---
 
-## 🚀 The Nexus Template (What You Get)
-This repo provides the **clean, deployment-ready** foundation. It strips away the specific "Sigma" branding and mock data, giving you a universal socket to plug into OpenAI.
+## 🛠️ How To Run (Do It Yourself)
+*Prerequisites: Python 3.9+, OpenAI API Key.*
 
-*   **🧠 GPT-4o Vision Native:** Drag & Drop images or PDFs. The AI "sees" and analyzes them.
-*   **⚡ Real-Time Streaming:** Token-by-token generation (no loading spinners).
-*   **🎨 Cyber-Minimalist UI:** Pre-styled CSS theme (dark mode optimized).
-*   **🧮 LaTeX Engine:** Automatically renders complex math/physics equations.
-*   **🛡️ Secure Auth:** Built-in API Key handling for safe public demos.
-
----
-
-## 🛠️ Quick Start
-
-### 1. Clone & Install
+**1. Clone the Repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/nexus-ai-template.git
+git clone https://github.com/Basyirin-AI/nexus-ai-template.git
 cd nexus-ai-template
+```
+
+**2. Install Dependencies**
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run the Engine
+**3. Ignite the Engine**
 ```bash
 streamlit run main.py
 ```
 
-### 3. Activate
-The app will launch in your browser. Enter your **OpenAI API Key** in the sidebar to ignite the engine.
+*The app will launch in your browser. Enter your API Key in the sidebar to start.*
 
 ---
 
-## ⚙️ Configuration
+## ⚖️ The "Done-For-You" Service
+**Most students get stuck on deployment.**
+Running it on `localhost` is easy. Deploying it to a live URL (`https://your-project.streamlit.app`) with custom branding and domain logic is hard.
 
-### PDF Support (Optional)
-This template supports PDF analysis using `pdf2image`.
-*   **Mac/Linux:** Usually works out of the box.
-*   **Windows:** You must install [Poppler](https://github.com/oschwartz10612/poppler-windows/releases/) and add it to your PATH.
-*   *Fallback:* If Poppler is missing, the app gracefully disables PDF support but keeps Image Vision active.
+I offer a **Rapid Prototyping Service** to bridge that gap.
 
-### Customizing the "Soul"
-Edit `system_instruction.md` to change the AI's persona.
-*   *Current:* "Academic Tutor"
-*   *Change to:* "Code Reviewer", "Legal Assistant", "Medical Scribe", etc.
+| Feature | 🆓 Free Template (This Repo) | ⚡ Paid Service ($99 USD) |
+| :--- | :---: | :---: |
+| **Source Code** | ✅ Included | ✅ Included |
+| **Hosting** | ❌ Localhost Only | ✅ **Live URL Deployment** |
+| **Branding** | ❌ Default "Nexus" Theme | ✅ **Your Name/Logo/Colors** |
+| **Custom Logic** | ❌ Generic AI Persona | ✅ **Tuned to your Topic (Law/Med)** |
+| **Turnaround** | 🐢 Do It Yourself | 🚀 **< 48 Hours** |
+
+### 💼 Who Is This For?
+*   **Hackathon Teams** who need a backend *now* so they can focus on the pitch.
+*   **FYP Students** who need a polished artifact to show their supervisor.
+*   **Non-Technical Founders** validating an idea.
 
 ---
 
-## 💼 Custom Deployment Service
-**I build bespoke AI Prototypes for Students & Founders.**
+## 📬 Ready to Build?
+I accept **2 clients per week** to ensure quality.
 
-The video above shows what is possible when we customize this template. If you need:
-*   Custom Branding (Your Name/Logo).
-*   Specific Domain Logic (Legal, Medical, Engineering).
-*   Deployment to the Web (Streamlit Cloud).
+*   **Cost:** Flat Fee **$99 USD** (50% Deposit).
+*   **Deliverable:** Full Source Code + Live Deployed URL.
+*   **Time:** 48 Hours.
 
-**I offer a 48-hour Turnaround Service.**
-*   **Cost:** Flat Fee ($99 / RM 450).
-*   **Deliverable:** Full Source Code + Live URL.
+**[Click Here to DM on Twitter/X]** or email me at **[your.email@example.com]**.
 
-**[📩 DM Me on Twitter/X]** or **[📧 Email Me]** to book a slot.
-```
+---
+
+<p align="center">
+  <i>Built by <a href="https://github.com/Basyirin-AI">Basyirin | The AI Architect</a>.</i>
+</p>
