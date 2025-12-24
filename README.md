@@ -10,10 +10,11 @@
 ---
 
 ## 🎥 Capability Showcase
-*The video below demonstrates **Sigma AI**, a production-grade implementation built using this exact architecture. It features advanced branding, custom logic, and latency simulation.*
+*The video below demonstrates Sigma AI, a production-grade implementation built using this exact architecture.*
 
-https://github.com/user-attachments/assets/PLACEHOLDER_FOR_YOUR_UPLOADED_VIDEO
-*(Note: To make this video playable directly on GitHub, drag and drop your .mp4 file into a GitHub Issue comment box, copy the link it generates, and paste it above.)*
+[![Watch the Demo](assets/thumbnail.jpg)]([https://youtu.be/_cbe6P1pMdE](https://youtu.be/_cbe6P1pMdE))
+
+> **Click the image above to watch the full 54s demo.**
 
 ---
 
