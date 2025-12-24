@@ -12,7 +12,7 @@
 ## 🎥 Capability Showcase
 *The video below demonstrates Sigma AI, a production-grade implementation built using this exact architecture.*
 
-[![Watch the Demo](assets/thumbnail.jpg)]([https://youtu.be/_cbe6P1pMdE](https://youtu.be/_cbe6P1pMdE))
+[![Watch the Demo](assets/thumbnail.jpg)](https://youtu.be/_cbe6P1pMdE)
 
 > **Click the image above to watch the full 54s demo.**
 
